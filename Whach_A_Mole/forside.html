@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html language="no">
+    <head>
+        <title>mal</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="mole.css">
+        <script src="mole.js"></script>
+        <link rel="icon" type="image/x-icon" href="/bilder/favicon.png">
+    </head>
+    <body>
+        <h1>Whack A Mole </h1>
+        <button id="start" onclick="startSpill()">Start spillet</button>
+        <br>
+        <script>
+            function startSpill() {
+                window.location.href = "index.html"; // Endre "spill.html" til navnet på filen som inneholder spillet
+            }
+        </script>
+        <svg id="tutorial" width="540px" height="540px">
+            <image id="pipe1Tutorial" href="bilder/pipe.png" x="100" y="280" height="250" ></image>
+            <image id="pipe2Tutorial" href="bilder/pipe.png" x="330" y="280" height="250" ></image>
+            <image id="planteTut" class="plante" href="bilder/plante.png" x="63" y="195" ></image>
+            <image id="blomstTut" class="plante" href="bilder/blomst.png" x="295" y="220" height="200" ></image>
+            <image id="planteKlikk" class="klikk" href="bilder/Klikk.png" x="100" y="195" ></image>
+            <image id="blomstKlikk" class="klikk" href="bilder/Klikk.png" x="320" y="250"></image>
+            <image id="planteNei" class="klikk" href="bilder/NEI.png" x="60" y="195" ></image>
+            <image id="blomstJa" class="klikk" href="bilder/JA.png" x="310" y="230"></image>
+        </svg>
+        </body>
+</html>

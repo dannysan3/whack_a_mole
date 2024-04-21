@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html language="no">
+    <head>
+        <title>Whack a mole</title>
+        <meta charset="utf-8">
+        <meta name="wiewport" content="width-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mole.css">
+        <script src="mole.js"></script>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    </head>
+    <body onload="oppstart()">
+        <h1>Whack A Mole </h1>
+        <h2 id="score">0</h2>
+        <svg id="brett" width="540px" height="540px">
+        
+            <image id="pipe1" class="pipe" href="bilder/pipe.png" x="40" y="60" height="250" ></image>
+            <image id="pipe2" class="pipe" href="bilder/pipe.png" x="220" y="60" height="250"></image>
+            <image id="pipe3" class="pipe" href="bilder/pipe.png" x="400" y="60" height="250" ></image>
+            <image id="pipe4" class="pipe" href="bilder/pipe.png" x="40" y="220" height="250"></image>
+            <image id="pipe5" class="pipe" href="bilder/pipe.png" x="220" y="220" height="250" ></image>
+            <image id="pipe6" class="pipe" href="bilder/pipe.png" x="400" y="220" height="250"></image>
+            <image id="pipe7" class="pipe" href="bilder/pipe.png" x="40" y="400" height="250" ></image>
+            <image id="pipe8" class="pipe" href="bilder/pipe.png" x="220" y="400" height="250"></image>
+            <image id="pipe9" class="pipe" href="bilder/pipe.png" x="400" y="400" height="250"></image>
+            <image id="p1" class="plante" href="bilder/plante.png" x="0" y="-200" visibility="hidden"></image>
+            <image id="b1" class="blomst" href="bilder/blomst.png" x="0" y="-100" visibility="hidden"></image>
+        </svg>
+        <table id="score-table">
+            <caption>Highscore</caption>
+            <tr>
+                <th>Date</th>
+                <th>Highscore</th>
+            </tr>
+        </table>
+        <div id="game-over-box" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Game Over!</h2>
+                <p>Din score denne runden: <span id="rundeScore">0</span></p>
+                <button onclick="spillIgjen()">Play Again</button>
+            </div>
+        </div>
+
+    </body>
+</html>
